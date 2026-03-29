@@ -4,7 +4,7 @@ import { IoPlayOutline } from 'react-icons/io5';
 
 const Banner = () => {
     return (
-        <div className="py-6 lg:min-h-180 flex items-center overflow-hidden">
+        <div className="py-7 lg:min-h-180 flex items-center overflow-hidden">
 
             <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-15 items-center">
 
@@ -22,7 +22,7 @@ const Banner = () => {
                     </h1>
 
                     <p className="text-lg max-w-xl text-zinc-700">
-                        Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products
+                        Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.<br /> Explore Products
 
                     </p>
 
