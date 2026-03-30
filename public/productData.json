@@ -1,0 +1,138 @@
+ [
+    {
+      "id": 1,
+      "name": "AI Writing Pro",
+      "description": "Powerful AI-powered writing assistant for blogs, emails, scripts, and marketing copy.",
+      "price": 29,
+      "period": "Monthly",
+      "tag": "Best Seller",
+      "tagType": "best seller",
+      "features": [
+        "Unlimited AI generations",
+        "Multiple writing tones",
+        "SEO optimization",
+        "Plagiarism checker",
+        "Export to multiple formats"
+      ],
+      "icon": "https://i.ibb.co.com/r2CVXhrH/writing-2327400-1.png"
+    },
+    {
+      "id": 2,
+      "name": "Design Templates Pack",
+      "description": "Thousands of premium, ready-to-use templates for presentations, social media, and print.",
+      "price": 49,
+      "period": "One-time",
+      "tag": "Popular",
+      "tagType": "popular",
+      "features": [
+        "5000+ premium templates",
+        "Fully customizable",
+        "Brand kit integration",
+        "Figma & Canva compatible",
+        "Weekly new templates"
+      ],
+      "icon": "https://i.ibb.co.com/cS2Y6Cwm/design-tool.png"
+    },
+    {
+      "id": 3,
+      "name": "Premium Stock Assets",
+      "description": "Access to millions of high-quality stock photos, videos, icons, and illustrations.",
+      "price": 25,
+      "period": "Monthly",
+      "tag": "New",
+      "tagType": "new",
+      "features": [
+        "10M+ premium assets",
+        "Commercial license",
+        "4K videos & photos",
+        "Regular updates",
+        "Fast download"
+      ],
+      "icon": "https://i.ibb.co.com/LdGh2RrD/2737448.png"
+    },
+    {
+      "id": 4,
+      "name": "Automation Toolkit",
+      "description": "Automate repetitive tasks and workflows across your favorite tools.",
+      "price": 79,
+      "period": "Monthly",
+      "tag": "Popular",
+      "tagType": "popular",
+      "features": [
+        "500+ pre-built automations",
+        "No-code workflow builder",
+        "Zapier & Make integration",
+        "Advanced scheduling",
+        "Error monitoring"
+      ],
+      "icon": "https://i.ibb.co.com/YBqkmjzh/operation.png"
+    },
+    {
+      "id": 5,
+      "name": "Resume Builder Pro",
+      "description": "Create ATS-friendly, professional resumes and cover letters with AI assistance.",
+      "price": 19,
+      "period": "Monthly",
+      "tag": "New",
+      "tagType": "new",
+      "features": [
+        "ATS optimized templates",
+        "AI content suggestions",
+        "Multiple resume versions",
+        "Export to PDF & Word",
+        "LinkedIn optimization"
+      ],
+      "icon": "https://i.ibb.co.com/0RBnd8T7/portfolio.png"
+    },
+    {
+      "id": 6,
+      "name": "Social Media Content Kit",
+      "description": "Complete toolkit for creating viral social media content across all platforms.",
+      "price": 35,
+      "period": "Monthly",
+      "tag": "Best Seller",
+      "tagType": "best seller",
+      "features": [
+        "Caption generator",
+        "Hashtag research",
+        "Post scheduler",
+        "Content calendar",
+        "Analytics dashboard"
+      ],
+      "icon": "https://i.ibb.co.com/q3b9zXKZ/social-media.png"
+    },
+    {
+      "id": 7,
+      "name": "Content Analytics Pro",
+      "description": "Deep insights and performance tracking for all your content and marketing campaigns.",
+      "price": 49,
+      "period": "Yearly",
+      "tag": "Popular",
+      "tagType": "popular",
+      "features": [
+        "Real-time analytics",
+        "AI performance insights",
+        "Competitor analysis",
+        "Custom reports",
+        "Multi-platform tracking"
+      ],
+      "icon": "https://i.ibb.co.com/rRBScVC1/chart.webp"
+    },
+    {
+      "id": 8,
+      "name": "All-in-One Starter",
+      "description": "Perfect entry plan with essential tools to get started with content creation.",
+      "price": 29,
+      "period": "One-time",
+      "tag": "Popular",
+      "tagType": "popular",
+      "features": [
+        "Limited AI generations",
+        "Basic templates",
+        "Community support",
+        "Watermarked exports",
+        "Core features only"
+      ],
+      "icon": "https://i.ibb.co.com/8ndR9Snx/star.webp"
+    }
+  ]
