@@ -1,14 +1,19 @@
 import React, { use, useState } from 'react';
 import ToolCard from './ToolCard';
+import Cart from '../Cart/Cart';
 
 
 
-const DigitalTools = ({ toolsPromise }) => {
+const DigitalTools = ({ toolsPromise, cart, setCart }) => {
 
     const tools = use(toolsPromise);
     // console.log(tools);
 
     const [activeTab, setActiveTab] = useState('products');
+
+    // const [cart, setCart] = useState([]);
+
+
 
     return (
         <div className='container mx-auto mt-28 mb-10 space-y-10'>
@@ -28,17 +33,27 @@ const DigitalTools = ({ toolsPromise }) => {
 
                     <input type="radio" name="my_tabs_1"
                         className={`tab ${activeTab === 'cart' ? 'bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white' : ''} rounded-full w-30`}
-                        aria-label="Cart (0)"
+                        aria-label={`Cart (${cart.length})`}
                         onClick={() => setActiveTab('cart')} />
                 </div>
             </div>
 
-            {/* Tools cards section  */}
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 ml-2 md:ml-0 md:mx-2 lg:mx-10 mb-28'>
-                {
-                    tools.map(tool => <ToolCard key={tool.id} tool={tool}></ToolCard>)
-                }
-            </div>
+
+            {
+                activeTab === 'products' &&
+                // Tools cards section
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 ml-2 md:ml-0 md:mx-2 lg:mx-10 mb-28'>
+                    {
+                        tools.map(tool => <ToolCard key={tool.id} tool={tool} cart={cart} setCart={setCart}></ToolCard>)
+                    }
+                </div>
+            }
+
+            {
+                activeTab === 'cart' &&
+                // Cart section
+                <Cart cart={cart} setCart={setCart}></Cart>
+            }
 
         </div>
     );

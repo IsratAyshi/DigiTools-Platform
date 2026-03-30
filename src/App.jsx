@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Metrics from './Components/Banner/Metrics'
@@ -16,9 +16,14 @@ const getTools = async () => {
   return data;
 }
 
+
+
+
 function App() {
 
   const toolsPromise = getTools();
+
+  const [cart, setCart] = useState([]);
 
   return (
     <>
@@ -29,7 +34,7 @@ function App() {
 
       <Suspense fallback={<div><span className="loading loading-spinner loading-lg"></span></div>}>
         <DigitalTools
-          toolsPromise={toolsPromise}>
+          toolsPromise={toolsPromise} cart={cart} setCart={setCart}>
         </DigitalTools>
       </Suspense>
 

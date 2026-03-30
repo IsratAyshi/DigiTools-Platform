@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const ToolCard = ({ tool }) => {
+const ToolCard = ({ tool, cart, setCart }) => {
 
     const { name, description, price, period, tag, tagType, icon, features } = tool
+
+    const [addToCartBtn, setAddToCartBtn] = useState(false);
+
+    const handleAddToCart = () => {
+        setAddToCartBtn(true);
+
+        const newCart = [...cart, tool];
+        setCart(newCart);
+    }
 
     return (
         <div className='card shadow-lg rounded-lg border border-zinc-200 overflow-hidden p-5'>
@@ -32,10 +41,12 @@ const ToolCard = ({ tool }) => {
             </div>
 
             <button
-                onClick=''
-                className='btn w-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-2xl mb-4'
+                onClick={handleAddToCart}
+                className={`btn w-full ${addToCartBtn ? 'bg-green-600' : 'bg-linear-to-r from-[#4f39f6] to-[#9514fa]'} text-white rounded-2xl mb-4`}
             >
-                Buy Now
+                {
+                    addToCartBtn ? 'Added to Cart' : 'Buy Now'
+                }
             </button>
         </div>
     );
