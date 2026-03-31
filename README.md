@@ -1,11 +1,11 @@
 
-## Digital Tools Marketplace
+# Digital Tools Marketplace
 ---
 # Project Description
 - 
 
 ---
-# Technology used
+## Technology used
 - React.js + Vite
 - Tailwind CSS, DaisyUI
 - JavaScript (ES6+)
@@ -13,7 +13,7 @@
 - JSON Data
 
 ---
-# Features
+## Features
 - 
 - 
 - 

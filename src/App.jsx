@@ -32,7 +32,7 @@ function App() {
       <Banner></Banner>
       <Metrics></Metrics>
 
-      <Suspense fallback={<div><span className="loading loading-spinner loading-lg flex justify-center items-center mx-auto my-10"></span></div>}>
+      <Suspense fallback={<div><span className="loading loading-spinner loading-lg flex justify-center items-center mx-auto my-10 h-[60vh]"></span></div>}>
         <DigitalTools
           toolsPromise={toolsPromise} cart={cart} setCart={setCart}>
         </DigitalTools>

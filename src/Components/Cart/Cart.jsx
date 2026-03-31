@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoCartOutline } from 'react-icons/io5';
 import { MdDeleteForever } from 'react-icons/md';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cart, setCart }) => {
 
@@ -8,12 +9,17 @@ const Cart = ({ cart, setCart }) => {
 
     const handleDelete = (item) => {
         const newCart = cart.filter(toolR => item.id !== toolR.id);
-        alert("removed from cart");
+        toast.error("Removed from cart");
         setCart(newCart);
     }
 
     const handlePayment = () => {
-        alert('Payment Successful');
+        if (cart.length === 0) {
+            toast.error("Cart is empty. Add some products.", { theme: "colored" });
+            return;
+        }
+
+        toast.success('Payment Successful', { theme: "colored" });
         setCart([]);
     }
 
