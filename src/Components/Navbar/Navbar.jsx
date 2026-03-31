@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoCartOutline } from 'react-icons/io5';
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
     return (
         <div className="navbar bg-base-100 shadow-sm md:px-10 lg:px-50">
 
@@ -39,11 +39,14 @@ const Navbar = () => {
             <div className="navbar-end flex items-center gap-3 ">
                 <div className='relative'>
                     <IoCartOutline className='text-2xl' />
-                    <span className="absolute -top-3 -right-3 badge badge-sm badge-error w-5 h-5 ">0</span>
+                    {
+                        cart.length > 0 &&
+                        <span className="absolute -top-3 -right-3 badge badge-sm badge-error w-5 h-5 ">{cart.length}</span>
+                    }
                 </div>
 
                 <button className="btn btn-ghost">Login</button>
-                <a className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-3xl">Get Started</a>
+                <a href="" className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-3xl">Get Started</a>
             </div>
         </div>
     );

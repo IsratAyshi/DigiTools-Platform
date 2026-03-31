@@ -27,11 +27,11 @@ const Banner = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-4 pt-4">
-                        <button className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] px-8 py-4 rounded-full font-bold shadow-xl shadow-[#4f39f6]/30 text-white">
+                        <button className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] px-8 py-8 rounded-full font-bold shadow-xl shadow-[#4f39f6]/30 text-white border-0">
                             Explore Products
                         </button>
 
-                        <button className='border border-[#4f39f6] bg-clip-text text-transparent bg-linear-to-r from-[#4f39f6] to-[#9514fa] px-5 py-4 font-bold rounded-full flex justify-center items-center gap-2'>
+                        <button className='btn border border-[#4f39f6] bg-clip-text text-transparent bg-linear-to-r from-[#4f39f6] to-[#9514fa] px-5 py-8 font-bold rounded-full flex justify-center items-center gap-2'>
                             <IoPlayOutline className=" text-[#4f39f6] text-xl" />Watch Demo
                         </button>
                     </div>

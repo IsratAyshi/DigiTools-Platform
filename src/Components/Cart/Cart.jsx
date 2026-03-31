@@ -3,6 +3,20 @@ import { IoCartOutline } from 'react-icons/io5';
 import { MdDeleteForever } from 'react-icons/md';
 
 const Cart = ({ cart, setCart }) => {
+
+    const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+
+    const handleDelete = (item) => {
+        const newCart = cart.filter(toolR => item.id !== toolR.id);
+        alert("removed from cart");
+        setCart(newCart);
+    }
+
+    const handlePayment = () => {
+        alert('Payment Successful');
+        setCart([]);
+    }
+
     return (
         <div className='space-y-10 my-10 container mx-auto border border-zinc-200 rounded-2xl p-5 lg:max-w-300'>
 
@@ -34,7 +48,7 @@ const Cart = ({ cart, setCart }) => {
                             </div>
 
                             <button
-                                onClick=''
+                                onClick={() => handleDelete(item)}
                                 className='btn btn-ghost text-red-500 font-bold p-2'>
                                 <MdDeleteForever />Remove
                             </button>
@@ -49,10 +63,10 @@ const Cart = ({ cart, setCart }) => {
 
             <div className='flex items-center justify-between rounded-2xl p-4 '>
                 <div className='text-xl font-bold'>Total</div>
-                <div className='text-xl font-bold'>totalPrice</div>
+                <div className='text-xl font-bold'>$ {totalPrice}</div>
             </div>
 
-            <button onClick='' className='btn text-center bg-linear-to-r from-[#4f39f6] to-[#9514fa] hover:border-purple-950 hover:my-1 rounded-2xl p-7 w-full text-white text-xl font-semibold'>
+            <button onClick={handlePayment} className='btn text-center bg-linear-to-r from-[#4f39f6] to-[#9514fa] hover:border-purple-950 hover:my-1 rounded-2xl p-7 w-full text-white text-xl font-semibold'>
                 Proceed To Checkout
             </button >
 

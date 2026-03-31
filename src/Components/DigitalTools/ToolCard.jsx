@@ -9,6 +9,10 @@ const ToolCard = ({ tool, cart, setCart }) => {
     const handleAddToCart = () => {
         setAddToCartBtn(true);
 
+        if (cart.find(item => item.id === tool.id)) {
+            return;
+        }
+
         const newCart = [...cart, tool];
         setCart(newCart);
     }

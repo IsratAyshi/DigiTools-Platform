@@ -7,7 +7,7 @@ import rocketImg from '../../assets/rocket.png'
 
 const GetStarted = () => {
     return (
-        <div className='bg-base-200 py-28'>
+        <div id='get-started' className='bg-base-200 py-28'>
             <div className='container mx-auto space-y-10'>
                 <div className='text-center space-y-4'>
                     <h1 className='text-5xl font-extrabold'>Get Started In 3 Steps</h1>
